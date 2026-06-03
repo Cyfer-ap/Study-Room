@@ -1,12 +1,12 @@
 import Link from "next/link";
-import RoomPreviewCard from "@/components/rooms/RoomPreviewCard";
+import RoomPreviewCard from "./RoomPreviewCard";
 
 const studyRooms = [
     {
         id: "ai-ml",
         title: "AI & Machine Learning",
         topic: "Neural Networks Revision",
-        currentMembers: 12,
+        currentMembers: 8,
         maxMembers: 12,
         status: "Live",
     },
@@ -29,11 +29,10 @@ const studyRooms = [
 ];
 
 export default function RoomsPage() {
-
     return (
         <main className="min-h-screen bg-slate-950 px-6 py-10 text-white">
             <div className="mx-auto max-w-7xl">
-                <div className="mb-10 flex items-center justify-between">
+                <div className="mb-10 flex items-center justify-between gap-6">
                     <div>
                         <p className="mb-2 text-sm font-semibold text-cyan-300">
                             Study Rooms
@@ -51,7 +50,7 @@ export default function RoomsPage() {
 
                     <Link
                         href="/"
-                        className="rounded-full border border-slate-700 px-5 py-2 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-300"
+                        className="shrink-0 rounded-full border border-slate-700 px-5 py-2 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-300"
                     >
                         Back Home
                     </Link>
@@ -61,6 +60,7 @@ export default function RoomsPage() {
                     {studyRooms.map((room) => (
                         <RoomPreviewCard
                             key={room.id}
+                            id={room.id}
                             title={room.title}
                             topic={room.topic}
                             currentMembers={room.currentMembers}
