@@ -3,7 +3,8 @@ import FeaturesSection from "@/components/landing/FeaturesSection";
 import HeroSection from "@/components/landing/HeroSection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import Navbar from "@/components/landing/Navbar";
-
+import RoomPreviewCard from "@/components/rooms/RoomPreviewCard";
+import Link from "next/link";
 
 export default function Home() {
     return (
