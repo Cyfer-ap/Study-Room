@@ -6,26 +6,30 @@ const studyRooms = [
         id: "ai-ml",
         title: "AI & Machine Learning",
         topic: "Neural Networks Revision",
-        members: "8 / 12",
+        currentMembers: 12,
+        maxMembers: 12,
         status: "Live",
     },
     {
         id: "data-structures",
         title: "Data Structures",
         topic: "Graph Algorithms Practice",
-        members: "5 / 10",
+        currentMembers: 5,
+        maxMembers: 10,
         status: "Open",
     },
     {
         id: "web-development",
         title: "Web Development",
         topic: "Next.js App Router Discussion",
-        members: "3 / 8",
+        currentMembers: 3,
+        maxMembers: 8,
         status: "Open",
     },
 ];
 
 export default function RoomsPage() {
+
     return (
         <main className="min-h-screen bg-slate-950 px-6 py-10 text-white">
             <div className="mx-auto max-w-7xl">
@@ -59,7 +63,8 @@ export default function RoomsPage() {
                             key={room.id}
                             title={room.title}
                             topic={room.topic}
-                            members={room.members}
+                            currentMembers={room.currentMembers}
+                            maxMembers={room.maxMembers}
                             status={room.status}
                         />
                     ))}
