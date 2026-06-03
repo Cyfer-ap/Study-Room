@@ -1,32 +1,6 @@
 import Link from "next/link";
+import { studyRooms } from "@/data/studyRooms";
 import RoomPreviewCard from "./RoomPreviewCard";
-
-const studyRooms = [
-    {
-        id: "ai-ml",
-        title: "AI & Machine Learning",
-        topic: "Neural Networks Revision",
-        currentMembers: 8,
-        maxMembers: 12,
-        status: "Live",
-    },
-    {
-        id: "data-structures",
-        title: "Data Structures",
-        topic: "Graph Algorithms Practice",
-        currentMembers: 5,
-        maxMembers: 10,
-        status: "Open",
-    },
-    {
-        id: "web-development",
-        title: "Web Development",
-        topic: "Next.js App Router Discussion",
-        currentMembers: 3,
-        maxMembers: 8,
-        status: "Open",
-    },
-];
 
 export default function RoomsPage() {
     return (
