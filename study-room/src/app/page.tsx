@@ -1,7 +1,7 @@
 import HeroSection from "@/components/landing/HeroSection";
 import Navbar from "@/components/landing/Navbar";
 import FeaturesSection from "@/components/landing/FeaturesSection";
-
+import HowItWorksSection from "@/components/landing/HowItWorksSection";
 
 
 
@@ -11,38 +11,8 @@ export default function Home() {
             <Navbar />
             <HeroSection />
             <FeaturesSection />
+            <HowItWorksSection />
 
-            {/* How It Works */}
-            <section
-                id="how-it-works"
-                className="border-y border-slate-800 bg-slate-900/60"
-            >
-                <div className="mx-auto max-w-7xl px-6 py-20">
-                    <h2 className="mb-10 text-3xl font-bold md:text-4xl">
-                        How it works
-                    </h2>
-
-                    <div className="grid gap-6 md:grid-cols-3">
-                        <StepCard
-                            step="01"
-                            title="Create a room"
-                            description="A student creates a topic-based study room and defines the study objective."
-                        />
-
-                        <StepCard
-                            step="02"
-                            title="Invite or join"
-                            description="Other students join the room for live discussion, chat, and collaborative learning."
-                        />
-
-                        <StepCard
-                            step="03"
-                            title="Study and test"
-                            description="Participants revise concepts, ask questions, and test each other in real time."
-                        />
-                    </div>
-                </div>
-            </section>
 
             {/* CTA */}
             <section id="rooms" className="mx-auto max-w-4xl px-6 py-24 text-center">
