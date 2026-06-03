@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroSection() {
     return (
         <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
@@ -17,9 +19,12 @@ export default function HeroSection() {
                 </p>
 
                 <div className="flex flex-col gap-4 sm:flex-row">
-                    <button className="rounded-full bg-cyan-400 px-7 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300">
+                    <Link
+                        href="/rooms"
+                        className="rounded-full bg-cyan-400 px-7 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-300"
+                    >
                         Create Study Room
-                    </button>
+                    </Link>
 
                     <button className="rounded-full border border-slate-700 px-7 py-3 font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-300">
                         Explore Features

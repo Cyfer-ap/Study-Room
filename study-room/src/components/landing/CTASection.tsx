@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CTASection() {
     return (
         <section id="rooms" className="mx-auto max-w-4xl px-6 py-24 text-center">
@@ -10,9 +12,12 @@ export default function CTASection() {
                 authentication, and real-time communication.
             </p>
 
-            <button className="rounded-full bg-cyan-400 px-8 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300">
+            <Link
+                href="/rooms"
+                className="inline-block rounded-full bg-cyan-400 px-8 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+            >
                 Start Building
-            </button>
+            </Link>
         </section>
     );
 }
